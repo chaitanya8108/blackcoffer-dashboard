@@ -14,7 +14,7 @@ export const FilterProvider = ({ children }) => {
     end_year: '', topic: '', sector: '', region: '', pestle: '', source: '', swot: '', country: '', city: ''
   });
 
-  const [searchQuery, setSearchQuery] = useState(''); // ✅ ADDED
+  const [searchQuery, setSearchQuery] = useState(''); 
 
   const [filterOptions, setFilterOptions] = useState({
     end_years: [], topics: [], sectors: [], regions: [], pestles: [], sources: [], swots: [], countries: [], cities: []
@@ -57,8 +57,8 @@ export const FilterProvider = ({ children }) => {
     <FilterContext.Provider
       value={{
         filters,
-        searchQuery,      // ✅ ADDED
-        setSearchQuery,   // ✅ ADDED
+        searchQuery,      
+        setSearchQuery,   
         filterOptions,
         loading,
         updateFilter,

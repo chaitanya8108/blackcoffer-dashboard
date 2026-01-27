@@ -14,7 +14,7 @@ import PESTLEChart from '../charts/PESTLEChart';
 import ScatterChart from '../charts/ScatterChart';
 
 const Dashboard = () => {
-  const { filters, searchQuery } = useFilters(); // ✅ ADDED
+  const { filters, searchQuery } = useFilters(); 
   const [aggregatedData, setAggregatedData] = useState(null);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
