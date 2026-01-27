@@ -24,8 +24,8 @@ const Dashboard = () => {
       setLoading(true);
       try {
         const [aggData, statsData] = await Promise.all([
-          fetchAggregatedData(filters, searchQuery), // ✅
-          fetchStats(filters, searchQuery)           // ✅
+          fetchAggregatedData(filters, searchQuery), 
+          fetchStats(filters, searchQuery)           
         ]);
         setAggregatedData(aggData);
         setStats(statsData);
@@ -36,7 +36,7 @@ const Dashboard = () => {
       }
     };
     loadData();
-  }, [filters, searchQuery]); // ✅
+  }, [filters, searchQuery]); 
 
   if (loading) {
     return (

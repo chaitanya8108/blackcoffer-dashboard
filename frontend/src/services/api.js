@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL ;
 const api = axios.create({ baseURL: API_BASE_URL, headers: { 'Content-Type': 'application/json' } });
 
 const buildParams = (filters) => {
@@ -15,7 +15,7 @@ export const fetchFilters = async () => (await api.get('/filters')).data;
 
 export const fetchAggregatedData = async (filters = {}, search = '') => {
   const params = buildParams(filters);
-  if (search) params.append('search', search); // ✅ ADDED
+  if (search) params.append('search', search); 
   return (await api.get(`/aggregated?${params.toString()}`)).data;
 };
 
