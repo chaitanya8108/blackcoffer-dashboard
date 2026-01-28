@@ -15,3 +15,6 @@
 4. Run start_backend.bat
 5. Run start_frontend.bat
 6. Open http://localhost:3000
+
+## Deployed Link
+https://blackcoffer-dashboard-fejq.vercel.app/
